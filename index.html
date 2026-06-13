@@ -84,6 +84,7 @@
 
   /* ARTWORK TILES */
   .art { width: 100%; aspect-ratio: 4 / 3; position: relative; overflow: hidden; background: #ededed; }
+  .art img, .fart img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .art1 { background: var(--black); }
   .art1::after { content:''; position:absolute; width:55%; height:55%; border-radius:50%; background: var(--orange); top:22%; left:22%; }
   .art2 { background: var(--blue); }
@@ -315,7 +316,7 @@
           <h1>HKUGA College<br>Alumni Association<span class="cn">港大同學會書院校友會</span></h1>
           <a class="txtlink" onclick="go('membership')">Become a member</a>
         </div>
-        <div><div class="art art1"></div></div>
+        <div><div class="art"><img src="building.jpg" alt="HKUGA College"></div></div>
       </div>
     </div>
   </section>
@@ -338,7 +339,7 @@
           <p class="note">Remember to log in using your <b>@hkugac.edu.hk</b> account.</p>
           <p style="margin-top:18px;margin-bottom:0;"><a class="txtlink" onclick="go('tutoring')">Click here for more</a></p>
         </div>
-        <div class="fart art6"></div>
+        <div class="fart"><img src="tutoring.jpg" alt="Alumni tutoring a student"></div>
       </div>
     </div>
   </section>
@@ -353,11 +354,11 @@
       </div>
       <div class="list-grid">
         <div class="list-item" onclick="go('alumniday')">
-          <div class="art art2"></div>
+          <div class="art"><img src="dancing.jpg" alt="Alumni dancing together"></div>
           <div class="meta"><h3>Alumni Day</h3><div class="cat">A day of reunion and reconnection for graduates of all years.</div></div>
         </div>
         <div class="list-item" onclick="go('openday')">
-          <div class="art art3"></div>
+          <div class="art"><img src="openday.jpg" alt="Open Day celebration"></div>
           <div class="meta"><span class="flag">Featured</span><h3>20th Anniversary Open Day</h3><div class="cat">29–30 November 2025, with our Homecoming Party.</div></div>
         </div>
         <div class="list-item" onclick="go('agm')">
@@ -741,7 +742,7 @@
     <div class="crumb"><span onclick="go('home')">Home</span> / Events / 20th Anniversary Open Day</div>
     <h1 class="page-title">HKUGA College 20th Anniversary Open Day</h1>
   </div></section>
-  <div class="wrap"><div style="padding:36px 0 20px;"><div class="art art3" style="max-width:100%;aspect-ratio:21/9;"></div></div>
+  <div class="wrap"><div style="padding:36px 0 20px;"><div class="art" style="max-width:100%;aspect-ratio:21/9;"><img src="openday.jpg" alt="Open Day celebration"></div></div>
   <div style="padding:24px 0 70px;" class="wrap">
     <div class="ecard">
       <h3>Basic Information</h3>
